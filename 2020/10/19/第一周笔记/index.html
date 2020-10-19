@@ -20,30 +20,43 @@
     var CONFIG = {"hostname":"skyxiuluo.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="presonal blog">
-<meta property="og:type" content="website">
+  <meta name="description" content="php基本语法学习title: 第一周笔记date: 2020-10-19 09:29:28tags:—php基本语法的学习php在编程开始时开头要加，中间是php语法内容。在这个下面写php语法是不能被识别的。  echo和c语言中的printf相似，属于输出命令，但echo只需要双引号，而printf需要括号和双引号。  php的变量声明需要在变量名称前加上美元符号$，变量名称开头只能用英文，">
+<meta property="og:type" content="article">
 <meta property="og:title" content="sky&#39;s Blog">
-<meta property="og:url" content="http://skyxiuluo.github.io/index.html">
+<meta property="og:url" content="http://skyxiuluo.github.io/2020/10/19/%E7%AC%AC%E4%B8%80%E5%91%A8%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="sky&#39;s Blog">
-<meta property="og:description" content="presonal blog">
+<meta property="og:description" content="php基本语法学习title: 第一周笔记date: 2020-10-19 09:29:28tags:—php基本语法的学习php在编程开始时开头要加，中间是php语法内容。在这个下面写php语法是不能被识别的。  echo和c语言中的printf相似，属于输出命令，但echo只需要双引号，而printf需要括号和双引号。  php的变量声明需要在变量名称前加上美元符号$，变量名称开头只能用英文，">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqWy5uMDxO0dLpeg79Gr2aFTfUFu0Wi06ecStLbguOdJWq.FOz.hyy3*REzIrShPSv2uD4hIixdX5*n6VIExc.j0!/mnull&bo=JAGiAAAAAAADB6U!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqRCvn2BAVwoEynmUgd5gh8gyOR.XNCErTua2n3UpI67IaSCekZLxeoFRHdeOkFaGSBjGpRSsV1sR4Z4qB33smf0!/mnull&bo=LgGnAAAAAAADB6o!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqSQKxwfmA927QrDx4bMRCN*nQ5TGaGg8yle7jhLc*bHfjEoueDZGZLMwNIlDlGCJhixXW35E*2epZ03x9NdIAOs!/mnull&bo=PAGuAAAAAAADB7E!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqa5E.fSRuSAKXsySYS5fXexjYo9Dxjh4lyRn4AKZ*A1bLnCof38vh1GqRcqH7FiPMtysw7NuRYDiao2*cVBtzQg!/mnull&bo=agHWAAAAAAADB58!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqQ0FrNiHnwgSvzvMZ4zNDv3CuO1*Ky*kpuhvKkMbRqb49ZS8HacXrtFTruYmkQX7xDQjOiGrFaepU1gF2Vexaak!/mnull&bo=5QCLAAAAAAADB0w!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqSFwqiu2XRDp0gKvq.1pxtvlb3E1P4zJIbrKBVFigm8hmsZgNTCS64*akee2zrcqz6KFksbOoLAwrAIld6I2kJ0!/mnull&bo=9wDJAAAAAAADBxw!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqTtD1fJJgTHTkGISpDBcvxMZu4opaMu9ABzr1p8XZMS76Q64VOjwoBEwQbRCuNDdhGl30Lu.MyX.Sm0Utq6Nga8!/mnull&bo=mgHYAAAAAAADB2E!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqUg6tLn6YthsmzFPdJ88HKVEZ4D1WYXktV26pVdA9YtlMdkfk*zqPuTMM4CuF9XNO131UGSmsnQY6TBsFSCesiU!/mnull&bo=pwH9AAAAAAADB3k!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqbcco6zKvKwKwXtHhD8n*7LObe8bIM2xsT3CsSyznR7yt.bK.nfC9guap6izfGajIrf4xwJjJt5bMnuWS7b2pmg!/mnull&bo=UQIFAQAAAAADB3U!&rf=photolist&t=5">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqetcOrPA9jxz49auCyxMNaDVIPngE.3*x1OG7IBnilZEVjBjxusRkhgZngCDPsQPyfA5tsiK3FDTMeqLjbwE6o0!/mnull&bo=LwE0AQAAAAADBzk!&rf=photolist&t=5">
+<meta property="article:published_time" content="2020-10-19T01:29:28.559Z">
+<meta property="article:modified_time" content="2020-10-19T09:29:07.742Z">
 <meta property="article:author" content="小马">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqWy5uMDxO0dLpeg79Gr2aFTfUFu0Wi06ecStLbguOdJWq.FOz.hyy3*REzIrShPSv2uD4hIixdX5*n6VIExc.j0!/mnull&bo=JAGiAAAAAAADB6U!&rf=photolist&t=5">
 
-<link rel="canonical" href="http://skyxiuluo.github.io/">
+<link rel="canonical" href="http://skyxiuluo.github.io/2020/10/19/%E7%AC%AC%E4%B8%80%E5%91%A8%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>sky's Blog</title>
+  <title> | sky's Blog</title>
   
 
 
@@ -147,9 +160,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -165,10 +179,9 @@
       <meta itemprop="name" content="sky's Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/10/19/%E7%AC%AC%E4%B8%80%E5%91%A8%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -192,7 +205,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="php基本语法学习"><a href="#php基本语法学习" class="headerlink" title="php基本语法学习"></a>php基本语法学习</h2><p>title: 第一周笔记<br>date: 2020-10-19 09:29:28<br>tags:<br>—php基本语法的学习<br><br><br>php在编程开始时开头要加<?php ，结尾要加?>，中间是php语法内容。<br>在这个<?php上面或者在这个?>下面写php语法是不能被识别的。</p>
+        <h2 id="php基本语法学习"><a href="#php基本语法学习" class="headerlink" title="php基本语法学习"></a>php基本语法学习</h2><p>title: 第一周笔记<br>date: 2020-10-19 09:29:28<br>tags:<br>—php基本语法的学习<br><br><br>php在编程开始时开头要加<?php ，结尾要加?>，中间是php语法内容。<br>在这个<?php上面或者在这个?>下面写php语法是不能被识别的。</p>
 <p><img src="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqWy5uMDxO0dLpeg79Gr2aFTfUFu0Wi06ecStLbguOdJWq.FOz.hyy3*REzIrShPSv2uD4hIixdX5*n6VIExc.j0!/mnull&bo=JAGiAAAAAAADB6U!&rf=photolist&t=5" alt="图1"></p>
 <p>echo和c语言中的printf相似，属于输出命令，但echo只需要双引号，而printf需要括号和双引号。</p>
 <p><img src="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqRCvn2BAVwoEynmUgd5gh8gyOR.XNCErTua2n3UpI67IaSCekZLxeoFRHdeOkFaGSBjGpRSsV1sR4Z4qB33smf0!/mnull&bo=LgGnAAAAAAADB6o!&rf=photolist&t=5" alt="图2"></p>
@@ -212,91 +225,30 @@
 <p><img src="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqbcco6zKvKwKwXtHhD8n*7LObe8bIM2xsT3CsSyznR7yt.bK.nfC9guap6izfGajIrf4xwJjJt5bMnuWS7b2pmg!/mnull&bo=UQIFAQAAAAADB3U!&rf=photolist&t=5" alt="图9"></p>
 <p>在最后输出die中的内容后，die后面的下横线不再输出。string()是指输入的”Hello World!”是字符串类型。<br>php也可以用全局变量，但php使用全局变量的时候需要用global来引用到函数里面。<br><img src="http://m.qpic.cn/psc?/V529ha322bUR8k0ZhwDE1eMSjb38C7YX/bqQfVz5yrrGYSXMvKr.cqetcOrPA9jxz49auCyxMNaDVIPngE.3*x1OG7IBnilZEVjBjxusRkhgZngCDPsQPyfA5tsiK3FDTMeqLjbwE6o0!/mnull&bo=LwE0AQAAAAADBzk!&rf=photolist&t=5" alt="图10"></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://skyxiuluo.github.io/2020/10/09/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="http://img.mp.itc.cn/upload/20170808/36d07995325d41838f601458be1905f6_th.jpg">
-      <meta itemprop="name" content="小马">
-      <meta itemprop="description" content="presonal blog">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sky's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/09/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-10-09 16:52:22" itemprop="dateCreated datePublished" datetime="2020-10-09T16:52:22+08:00">2020-10-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/09/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -349,6 +301,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#php%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">php基本语法学习</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
